@@ -1,0 +1,68 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(228, 228, 228);
+    transition: 3s ease;
+    text-align: center;
+}
+
+main {
+    position: fixed;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    display: flex;
+    width: 400px;
+    max-width: 100%;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.699);
+    align-items: center;
+}
+
+#btns {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    max-width: 80%;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#stop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    max-width: 80%;
+}
+
+button {
+    color: white;
+    border: 0;  
+    width: 90px;
+    max-height: 80%;
+    height: 40px;
+    padding: 1% 1%;
+    background-color: rgb(83, 83, 83);
+    box-shadow: 0 3px 8px black;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#change-color.active,
+#slide.active,
+#stop.active {
+    transform: translate(-50%,-50%) scale(0);
+}
